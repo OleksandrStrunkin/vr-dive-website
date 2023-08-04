@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: roboto, sans-serif;
+  font-family: Montserrat;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.list,
+.logo,
+.link {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
