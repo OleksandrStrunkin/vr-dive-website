@@ -1,19 +1,83 @@
 .menu {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__logo-links{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__nav{
+        display: none;
+        @include desktop{
+            margin: 0 auto;
+            display: flex;
+            gap: 41px;
+            }
+    }
+
     &__link{
         color: var(--text-color);
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 12px;
         font-weight: 700;
+        transition: var(--transition-hover);
+        &:hover{
+            color: var(--accent-color);
+        }
+        
     }
+
     &__secondary-nav{
-        display: flex;
-        margin-left: auto;
+        display: none;
+        @include desktop{
+            display: flex;
+            margin-left: auto;
+            gap: 38px;
+            }
     }
-    &__secondary-link{
-        color: var(--text-color);
-        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        font-size: 12px;
-        font-weight: 700;
+
+
+}
+
+.menu__secondary-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 155px;
+    height: 48px;
+    border-radius: 40px;
+    border: 2px solid #FFF;
+    transition: var(--transition-hover);
+
+
+    color: var(--text-color);
+    
+    font-size: 12px;
+    font-weight: 700;
+    &:hover{
+        color: var(--accent-color);
+        border-color: var(--accent-color);
     }
+}
+
+.link{
+    color: #343045;
+    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    border: none;
+    &:hover{
+        animation: changeGradient 1s forwards;
+    }
+}
+
+@keyframes changeGradient {
+    0% {
+        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+    }
+    100% {
+        background: linear-gradient(180deg, #8176AF 0%, #C0B7E8 100%);
+    }
+
 }
