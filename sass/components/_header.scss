@@ -1,7 +1,8 @@
 .menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 0;
 
     &__logo-links{
         display: flex;
@@ -42,6 +43,30 @@
 
 }
 
+.logo-icon{
+    width: 70px;
+    height: 60px;
+    @include desktop{
+        width: 102px;
+        height: 103px;
+    }
+}
+
+.hydra-icon{
+    width: 46px;
+    height: 28px;
+    @include desktop{
+        width: 76px;
+        height: 46px;
+    }
+}
+
+.icon-burger{
+    @include desktop{
+        display: none;
+        }
+}
+
 .menu__secondary-link{
     display: flex;
     align-items: center;
@@ -71,6 +96,8 @@
         animation: changeGradient 1s forwards;
     }
 }
+
+
 
 @keyframes changeGradient {
     0% {
