@@ -18,10 +18,16 @@
       <div class="menu__logo">
         <a href="" class="menu__logo-links">
           <svg class="logo-icon" width="102" height="103">
-            <use href="./picture/logo.svg#icon-logo"></use>
+            <defs>
+              <linearGradient id="paint0_linear_1_5" x1="56.9966" y1="0.00115967" x2="56.9966" y2="102.927" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C0B7E8"/>
+                <stop offset="1" stop-color="#8176AF"/>
+              </linearGradient>
+            </defs>
+            <use href="./picture/logo.svg#icon-logo" fill="url(#paint0_linear_1_5)" ></use>
           </svg>
           <svg class="hydra-icon" width="76" height="46">
-            <use href="./picture/logo.svg#icon-hydra"></use>
+            <use href="./picture/logo.svg#icon-hydra" fill="url(#paint0_linear_1_5)"></use>
           </svg>
         </a>
       </div>
@@ -31,9 +37,11 @@
         <a href="" class="menu__link">TECHNOLOGIES</a>
         <a href="" class="menu__link">HOW TO</a>
       </nav>
-      <div class="icon-burger"><svg class="icon-Hamburger-Button" width="33" height="26">
-        <use href="./picture/logo.svg#icon-Hamburger-Button"></use>
-      </svg></div>
+      <div class="icon-burger">
+        <svg class="icon-Hamburger-Button" width="33" height="26">
+          <use href="./picture/logo.svg#icon-Hamburger-Button"></use>
+        </svg>
+      </div>
       <ul class="menu__secondary-nav">
         <li class="menu__secondary-item">
           <a href="" class="menu__secondary-link">CONTACT US</a>
@@ -47,7 +55,7 @@
   <main class="container">
     <section class="hero">
       <div class="hero-content">
-       <div class="hero-content-box">
+        <div class="hero-content-box">
           <h1 class="hero-title">
             <span class="gradient-word">Dive</span> Into The Depths
             Of <span class="gradient-word">Virtual Reality</span>
@@ -58,23 +66,59 @@
             eros in vitae.
           </p>
           <a href="" class="hero-btn link">BUILD YOUR WORLD</a>
-       </div>
-        <div class="img-box"><img src="./picture/pexels-michelangelo-buonarroti-8728382.png" alt="hero-girl" class="hero-image" /></div>
+        </div>
+        <div class="img-box"><img src="./picture/pexels-michelangelo-buonarroti-8728382.png" alt="hero-girl"
+            class="hero-image" /></div>
       </div>
-      <ul class="contacts">
-        <li class="contacts-item">
-          Pay Us a Visit
-          <span class="contacts-address">Union St, Seattle, WA 98101, United States</span>
-        </li>
-        <li class="contacts-item">
-          Give Us a Call
-          <span class="contacts-phone">(110) 1111-1010</span>
-        </li>
-        <li class="contacts-item">
-          Send Us a Message
-          <span class="contacts-email">Contact@HydraVTech.com</span>
-        </li>
-      </ul>
+      <div class="contacts-container">
+        <ul class="contacts">
+          <li class="contacts-item">
+            <div>
+              <svg class="icon-Location-Icon" width="70" height="70">
+                <use href="./picture/logo.svg#icon-Location-Icon"></use>
+              </svg>
+              </div>
+              <div class="contacts-box">
+                <h2 class="contacts-title">Pay Us a Visit</h2>
+                <a href="https://www.google.com/maps/place/Union+St,+Seattle,+WA+98101,+%D0%A1%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D1%96+%D0%A8%D1%82%D0%B0%D1%82%D0%B8+%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B8/@47.6099139,-122.3366916,17z/data=!3m1!4b1!4m6!3m5!1s0x54906ab465f9a32d:0x2b0d2afe1e719e15!8m2!3d47.6099139!4d-122.3341167!16s%2Fg%2F1vcq795y?entry=ttu"
+                  target="_blank" class="contacts-info">Union St, Seattle, WA 98101, United States
+                </a>
+              </div>
+              </li>
+              <li class="contacts-item">
+                <svg class="icon-phone-call" width="59" height="59">
+                  <use href="./picture/logo.svg#icon-phone-call"></use>
+                </svg>
+                <div class="contacts-box">
+                  <h2 class="contacts-title">Give Us a Call</h2>
+                  <a href="tel:+11011111010" class="contacts-info">(110) 1111-1010
+                  </a>
+                </div>
+              </li>
+          <li class="contacts-item">
+            <svg class="icon-mail" width="65" height="65">
+              <use href="./picture/logo.svg#icon-mail"></use>
+            </svg>
+            <div class="contacts-box">
+              <h2 class="contacts-title">Send Us a Message</h2>
+              <a href="mailto:Contact@HydraVTech.com" class="contacts-info">
+              Contact@HydraVTech.com
+              </a>
+            </div>
+          </li>
+        </ul>
+        <button class="arrow arrow-left">
+          <svg class="icon-arrow" width="30" height="30">
+          <use href="./picture/logo.svg#arrow-left"></use>
+          </svg>
+        </button>
+      <button class="arrow arrow-right">
+        <svg class="icon-arrow" width="30" height="30">
+        <use href="./picture/logo.svg#arrow-right"></use>
+        </svg>
+    </button>
+      </div>
+      
     </section>
     <section>
       <div>
@@ -254,6 +298,7 @@
       2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
     </p>
   </footer>
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
