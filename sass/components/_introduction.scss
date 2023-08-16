@@ -1,0 +1,110 @@
+.introduction{
+    margin-bottom: 60px;
+    align-items: center;
+    &-titleBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &-discriptionBox{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 38px;
+        & span{
+            font-weight: 300;
+        }
+    }
+    &__subtitle{
+        display: none;
+        @include desktop {
+            display: flex;
+            flex-direction: column;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 42px; 
+        }
+        & span {
+            font-weight: 300;
+        }
+        
+    }
+    &__text{
+        display: none;
+        @include desktop {
+            display: flex;
+            font-size: 16px;
+            max-width: 650px;
+        }
+    }
+    &-imgBox{
+        overflow: hidden;
+        border-radius: 140px 60px;
+        max-width: 524px;
+        margin-bottom: 50px;
+    }
+    &__subtext{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 35px;
+        @include desktop {
+            font-size: 16px;
+            max-width: 630px;
+        }
+    }
+    &-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @include desktop {
+            align-items: flex-start;
+        }
+    }
+    
+}
+
+.intro-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 292px;
+    height: 48px;
+    border-radius: 40px;
+
+    transition: var(--transition-hover);
+    color: var(--text-color);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    @include desktop {
+        width: 214px;
+    }
+
+    &:hover {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}
