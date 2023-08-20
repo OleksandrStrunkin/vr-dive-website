@@ -821,4 +821,93 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.process {
+  margin-bottom: 115px;
+}
+.process__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.process__titleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 120px;
+}
+.process__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 36px;
+  font-weight: 700;
+}
+.process__title span {
+  font-weight: 300;
+}
+.process__text {
+  max-width: 650px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.process__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.process__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+.process__number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 198px;
+  height: 198px;
+  background: linear-gradient(251deg, #C0B7E8 0%, #8176AF 100%);
+  color: #343045;
+  font-size: 64px;
+  font-weight: 700;
+}
+.process__step {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.item-border {
+  overflow: hidden;
+  border-radius: 50%;
+  border: 18px solid rgba(0, 0, 0, 0.25);
 }/*# sourceMappingURL=main.css.map */
