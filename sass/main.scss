@@ -1,10 +1,14 @@
 @import './base/reset';
 @import './utils/vars';
 @import './utils/mixins';
+
 @import './base/container';
+@import './base/comon';
 @import './components/header';
 @import './components/hero';
 @import './components/introduction';
 @import './components/build';
 @import './components/technologies';
 @import './components/process';
+@import './components/profile';
+@import './components/footer';

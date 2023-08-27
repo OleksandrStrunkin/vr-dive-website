@@ -47,7 +47,7 @@
           <a href="" class="menu__secondary-link">CONTACT US</a>
         </li>
         <li class="menu__secondary-item">
-          <a href="" class="menu__secondary-link link">JOIN HYDRA</a>
+          <a href="" class="menu__secondary-link button">JOIN HYDRA</a>
         </li>
       </ul>
     </menu>
@@ -244,55 +244,71 @@
         </li>
       </ul>
     </section>
-    <section>
-      <h2>JOIN HYDRA</h2>
-      <h2>Let’s Build Your VR Experience</h2>
-      <form>
-        <input type="text" name="first_name" placeholder="First Name" />
-        <input type="text" name="last_name" placeholder="Last Name" />
-        <input type="email" name="email" placeholder="Email" />
-        <input type="tel" name="phone_number" placeholder="Phone Number" />
-        <input type="text" name="subject" placeholder="Subject" />
-        <textarea name="message" placeholder="Tell Us Something..."></textarea>
-        <input type="submit" value="Submit" />
+    <section class="profile">
+      <div class="profile-boxTitle">
+        <h2 class="profile__title">JOIN HYDRA</h2>
+        <p class="profile__subtitle">Let’s Build Your VR Experience</p>
+      </div>
+      <form class="profile__form">
+        <input type="text" class="profile__input" name="first_name" placeholder="First Name" />
+        <input type="text" class="profile__input" name="last_name" placeholder="Last Name" />
+        <input type="email" class="profile__input" name="email" placeholder="Email" />
+        <input type="tel" class="profile__input" name="phone_number" placeholder="Phone Number" />
+        <input type="text" class="profile__input" name="subject" placeholder="Subject" />
+        <textarea class="profile__textarea" name="message" placeholder="Tell Us Something..."></textarea>
+        <button type="submit" class="profile__submit link" value="Submit">SEND TO HYDRA</button>
       </form>
     </section>
   </main>
-  <footer class="container">
-    <img src="" alt="" />
-    <div>
-      <ul>
-        <li><a href="">ABOUT</a></li>
-        <li><a href="">SERVICES</a></li>
-        <li><a href="">TECHNOLOGIES</a></li>
-        <li><a href="">HOW TO</a></li>
-        <li><a href="">JOIN HYDRA</a></li>
-      </ul>
+  <footer class="footer container">
+    <div class="footer__content">
+      <div class="menu__logo block">
+        <a href="" class="menu__logo-links">
+          <svg class="logo-icon_footer" width="185" height="187">
+            <defs>
+              <linearGradient id="paint0_linear_1_5" x1="56.9966" y1="0.00115967" x2="56.9966" y2="102.927" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#C0B7E8"/>
+                <stop offset="1" stop-color="#8176AF"/>
+              </linearGradient>
+            </defs>
+            <use href="./picture/logo.svg#icon-logo" fill="url(#paint0_linear_1_5)" ></use>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__links block">
+        <ul class="footer__list">
+          <li><a href="" class="footer__link">ABOUT</a></li>
+          <li><a href="" class="footer__link">SERVICES</a></li>
+          <li><a href="" class="footer__link">TECHNOLOGIES</a></li>
+          <li><a href="" class="footer__link">HOW TO</a></li>
+          <li><a href="" class="footer__link">JOIN HYDRA</a></li>
+        </ul>
+      </div>
+      <div class="footer__links block">
+        <ul class="footer__list">
+          <li><a href="" class="footer__link">F.A.Q</a></li>
+          <li><a href="" class="footer__link">SITEMAP</a></li>
+          <li><a href="" class="footer__link">CONDITIONS</a></li>
+          <li><a href="" class="footer__link">LICENSES</a></li>
+        </ul>
+      </div>
+      <div class="footer__social block">
+        <h3 class="footer__title">SOCIALIZE WITH HYDRA</h3>
+        <ul class="footer__list-social">
+          <li>face</li>
+          <li>twit</li>
+          <li>link</li>
+          <li>yout</li>
+          <li>inst</li>
+          <li>pint</li>
+        </ul>
+        <a href="" class="footer__cta link">BUILD YOUR WORLD</a>
+      </div>
     </div>
-    <div>
-      <ul>
-        <li><a href="">F.A.Q</a></li>
-        <li><a href="">SITEMAP</a></li>
-        <li><a href="">CONDITIONS</a></li>
-        <li><a href="">LICENSES</a></li>
-      </ul>
-    </div>
-    <div>
-      <h3>SOCIALIZE WITH HYDRA</h3>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
-      <a href="">BUILD YOUR WORLD</a>
-    </div>
-
-    <p>
+    <p class="footer__copyright">
       2023 © HYDRA LANDING PAGE - BY ZINE. E. FALOUTI - ALL RIGHTS RESERVED
     </p>
-  </footer>
+</footer>
   <script src="./scripts.js"></script>
 </body>
 

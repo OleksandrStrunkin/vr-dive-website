@@ -1,0 +1,86 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-bottom: 130px;
+
+    border-radius: 100px;
+    background: radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    &-boxTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 65px;
+    }
+    &__subtitle{
+        font-weight: 300;
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        max-width: 1058px;
+        margin-top: 20px;
+    }
+    &__input, &__textarea {
+        width: 48%; /* два елементи в ряду */
+        margin-bottom: 20px;
+        padding: 28px;
+        border-radius: 40px;
+        border: 2px solid #FFF;
+        box-sizing: border-box;
+
+        background-color: transparent;
+    }
+
+    &__textarea {
+        width: 100%; /* один елемент на всю ширину */
+        min-height: 210px;
+        resize: none;
+        margin-bottom: 50px;
+    }
+    
+    &__form > &__input:nth-child(odd) {
+        margin-right: 2%; /* вирівнювання другого елемента */
+    }
+    
+    &__form > &__input:nth-child(even) {
+        margin-left: 2%; /* вирівнювання першого елемента */
+    }
+    &__form > &__input:nth-child(5) {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.profile__submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 214px;
+    height: 48px;
+    border-radius: 40px;
+    cursor: pointer;
+
+    transition: var(--transition-hover);
+    color: var(--text-color);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    @include desktop {
+        width: 214px;
+    }
+
+    &:hover {
+        color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+}

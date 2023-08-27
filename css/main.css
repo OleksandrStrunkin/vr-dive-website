@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -72,6 +73,31 @@ p {
   .container {
     max-width: 1200px;
   }
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 155px;
+  height: 48px;
+  border-radius: 40px;
+  border: 2px solid #FFF;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+.button:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
 }
 
 .menu {
@@ -870,6 +896,10 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-image: url("../../picture/Vectorproc.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .process__item {
   display: -webkit-box;
@@ -910,4 +940,212 @@ p {
   overflow: hidden;
   border-radius: 50%;
   border: 18px solid rgba(0, 0, 0, 0.25);
+}
+
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 100px;
+  margin-bottom: 130px;
+  border-radius: 100px;
+  background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.profile-boxTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+.profile__subtitle {
+  font-weight: 300;
+}
+.profile__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1058px;
+  margin-top: 20px;
+}
+.profile__input, .profile__textarea {
+  width: 48%; /* два елементи в ряду */
+  margin-bottom: 20px;
+  padding: 28px;
+  border-radius: 40px;
+  border: 2px solid #FFF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+}
+.profile__textarea {
+  width: 100%; /* один елемент на всю ширину */
+  min-height: 210px;
+  resize: none;
+  margin-bottom: 50px;
+}
+.profile__form > .profile__input:nth-child(odd) {
+  margin-right: 2%; /* вирівнювання другого елемента */
+}
+.profile__form > .profile__input:nth-child(even) {
+  margin-left: 2%; /* вирівнювання першого елемента */
+}
+.profile__form > .profile__input:nth-child(5) {
+  width: 100%;
+  margin-right: 0;
+}
+
+.profile__submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 214px;
+  height: 48px;
+  border-radius: 40px;
+  cursor: pointer;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+@media screen and (min-width: 1000px) {
+  .profile__submit {
+    width: 214px;
+  }
+}
+.profile__submit:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.footer {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 126px;
+}
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  gap: 15px;
+}
+.footer__link {
+  color: var(--text-color);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 16px;
+  font-weight: 700;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+}
+.footer__link:hover {
+  color: var(--accent-color);
+}
+.footer__cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 155px;
+  height: 48px;
+  border-radius: 40px;
+  border: 2px solid #FFF;
+  -webkit-transition: var(--transition-hover);
+  transition: var(--transition-hover);
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: 700;
+}
+.footer__cta:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.footer__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+}
+.footer__copyright {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1.82px;
+}
+
+.logo-icon_footer {
+  width: 185px;
+  height: 187px;
+  margin-right: 180px;
+}
+
+.block {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100px;
+  position: relative;
+}
+
+.block:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -107px;
+  width: 6px;
+  height: 177px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 118, 175, 0.1)), color-stop(50%, #8176AF), to(rgba(129, 118, 175, 0.1)));
+  background: linear-gradient(to bottom, rgba(129, 118, 175, 0.1) 0%, #8176AF 50%, rgba(129, 118, 175, 0.1) 100%);
 }/*# sourceMappingURL=main.css.map */
