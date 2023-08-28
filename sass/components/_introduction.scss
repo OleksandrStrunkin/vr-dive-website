@@ -86,25 +86,8 @@
 }
 
 .intro-btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 292px;
-    height: 48px;
-    border-radius: 40px;
-
-    transition: var(--transition-hover);
-    color: var(--text-color);
-
-    font-size: 12px;
-    font-weight: 700;
-
     @include desktop {
         width: 214px;
-    }
-
-    &:hover {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
     }
 }

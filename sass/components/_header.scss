@@ -89,23 +89,3 @@
     }
 }
 
-.link{
-    color: #343045;
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    border: none;
-    &:hover{
-        animation: changeGradient 1s forwards;
-    }
-}
-
-
-
-@keyframes changeGradient {
-    0% {
-        background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    }
-    100% {
-        background: linear-gradient(180deg, #8176AF 0%, #C0B7E8 100%);
-    }
-
-}
