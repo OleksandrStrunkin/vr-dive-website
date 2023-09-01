@@ -4,7 +4,7 @@
     &-titleBox{
         display: flex;
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         @include desktop {
             display: flex;
@@ -26,8 +26,8 @@
     &__title{
         display: flex;
         flex-direction: column;
-        align-items: center;
-        font-size: 26px;
+        align-items: flex-start;
+        font-size: 36px;
         font-style: normal;
         font-weight: 700;
         margin-bottom: 38px;
@@ -54,6 +54,7 @@
         @include desktop {
             display: flex;
             font-size: 16px;
+            line-height: 24px;
             max-width: 650px;
         }
     }
@@ -66,7 +67,7 @@
     &__subtext{
         font-size: 12px;
         font-weight: 400;
-        line-height: normal;
+        line-height: 24px;
         margin-bottom: 35px;
         @include desktop {
             font-size: 16px;

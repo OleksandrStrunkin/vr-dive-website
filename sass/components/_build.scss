@@ -2,6 +2,7 @@
     margin-bottom: 115px;
     &-titleBox{
         display: flex;
+        align-items: center;
         justify-content: space-between;
         margin-bottom: 102px;
     }
@@ -19,6 +20,7 @@
     }
     &__text{
         font-size: 16px;
+        line-height: 24px;
         max-width: 650px;
     }
     &__list{
