@@ -1,52 +1,82 @@
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 155px;
-    height: 48px;
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 155px;
+  height: 48px;
 
-    font-size: 12px;
-    font-weight: 700;
+  font-size: 12px;
+  font-weight: 700;
 
-    background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
-    color: var(--color-btn-text);
-    border: none;
-    border-radius: 40px;
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(90deg, #8176AF 0%, #C0B7E8 100%);
+  color: var(--color-btn-text);
+  border: none;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
 }
-.btn::before{
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 150%;
-    height: 200%;
-    background-color: rgba(255, 255, 255, 0.5);
-    transform: translate(-50%, -50%) rotate(-45deg);
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 150%;
+  height: 200%;
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: translate(-50%, -50%) rotate(-45deg);
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .btn:hover::before {
-    opacity: 1;
-    transform: translate(150%, 150%) rotate(-45deg);
+  opacity: 1;
+  transform: translate(150%, 150%) rotate(-45deg);
 }
 
 
 .button-arrow {
-    display: flex;
-    align-items: center;
-    position: relative;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
-.arrow-hide{
+
+.arrow-hide {
   display: none;
   position: relative;
-  @include desktop{
+
+  @include desktop {
     display: block;
     position: relative;
   }
 }
-.arrow-down{
+
+.arrow-down {
   top: 22px;
+}
+
+.box-item {
+  display: none;
+  flex: 0 0 100%;
+  min-height: 109px;
+
+  &.active {
+    display: flex;
+  }
+
+  @include desktop {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
 }

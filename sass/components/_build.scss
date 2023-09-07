@@ -1,65 +1,129 @@
-.build{
+.build {
     margin-bottom: 115px;
-    &-titleBox{
+
+    &-titleBox {
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 102px;
     }
-    &__title{
+
+    &__title {
         display: flex;
         flex-direction: column;
-        
+
         & span {
             font-weight: 300;
         }
+
         @include desktop {
             font-size: 36px;
             font-weight: 700
         }
     }
-    &__text{
-        font-size: 16px;
-        line-height: 24px;
-        max-width: 650px;
+
+    &__text {
+        display: none;
+
+        @include desktop {
+            display: block;
+            font-size: 16px;
+            line-height: 24px;
+            max-width: 650px;
+        }
     }
-    &__list{
+
+    &__list {
         display: flex;
+        justify-content: center;
         align-items: center;
         gap: 10px;
     }
-    &__item{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-left: 45px;
-        padding-right: 45px;
-        padding-top: 23px;
-        padding-bottom: 40px;
-        border-radius: 40px;
-        background: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #433D60 0%, #211E2E 100%);
-    }
-    &__image{
+
+    &__image {
         display: flex;
         justify-content: center;
         margin-bottom: 35px;
         overflow: hidden;
         border-radius: 50%;
     }
-    &__subtitle{
+
+    &__subtitle {
         margin-bottom: 40px;
-        @include desktop{
+
+        @include desktop {
             font-size: 24px;
             font-weight: 700;
         }
     }
-    &__subtext{
+
+    &__subtext {
         margin-bottom: 35px;
         font-size: 12px;
         font-weight: 400;
     }
-    &__link{
+
+    &__link {
         width: 154px;
         height: 48px;
     }
+}
+
+.build-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    // max-width: 347px;
+    margin: 0 auto;
+}
+
+.build__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 100%;
+    display: none;
+
+    &.active {
+        display: flex;
+    }
+
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 23px;
+    padding-bottom: 40px;
+    border-radius: 40px;
+    background: radial-gradient(50.00% 50.00% at 50.00% 50.00%, #433D60 0%, #211E2E 100%);
+
+    @include desktop {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+.arrow2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    @include desktop {
+        display: none;
+    }
+}
+.arrow-left2 {
+    left: 0;
+}
+
+.arrow-right2 {
+    right: 0;
 }

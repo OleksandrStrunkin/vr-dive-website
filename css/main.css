@@ -147,6 +147,44 @@ p {
   top: 22px;
 }
 
+.box-item {
+  display: none;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+  min-height: 109px;
+}
+.box-item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  .box-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -381,7 +419,9 @@ p {
   position: relative;
 }
 
-.line1, .line2, .line3 {
+.line1,
+.line2,
+.line3 {
   position: absolute;
   width: 100%;
   z-index: -1;
@@ -398,7 +438,9 @@ p {
   left: 35%;
 }
 
-.line1 img, .line2 img, .line3 img {
+.line1 img,
+.line2 img,
+.line3 img {
   display: block;
   max-width: none;
   width: auto;
@@ -735,36 +777,27 @@ p {
   }
 }
 .build__text {
-  font-size: 16px;
-  line-height: 24px;
-  max-width: 650px;
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .build__text {
+    display: block;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 650px;
+  }
 }
 .build__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-}
-.build__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-left: 45px;
-  padding-right: 45px;
-  padding-top: 23px;
-  padding-bottom: 40px;
-  border-radius: 40px;
-  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
 }
 .build__image {
   display: -webkit-box;
@@ -794,6 +827,85 @@ p {
 .build__link {
   width: 154px;
   height: 48px;
+}
+
+.build-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.build__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  display: none;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 23px;
+  padding-bottom: 40px;
+  border-radius: 40px;
+  background: radial-gradient(50% 50% at 50% 50%, #433D60 0%, #211E2E 100%);
+}
+.build__item.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (min-width: 1000px) {
+  .build__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.arrow2 {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: linear-gradient(268deg, #C0B7E8 -0.6%, #8176AF 98.31%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+@media screen and (min-width: 1000px) {
+  .arrow2 {
+    display: none;
+  }
+}
+
+.arrow-left2 {
+  left: 0;
+}
+
+.arrow-right2 {
+  right: 0;
 }
 
 .technologies {

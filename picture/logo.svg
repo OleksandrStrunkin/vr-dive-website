@@ -33,5 +33,11 @@
 <symbol id="icon-VectorProc" viewBox="0 0 273 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.1361" d="M-1.704 4.115c2.931 9.408 18.376 30.203 48.165 16.101 19.906-9.424 30.294-19.7 55.619-2.936s44.916 15.628 57.243-1.705c12.328-17.333 44.438-21.973 56.478-1.421s52.656 23.015 56.862 6.062"></path>
 </symbol>
+<symbol id="icon-arrow2" viewBox="0 0 38 38">
+<path d="M15.8334 26.9166L23.75 19L15.8334 11.0833" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+<symbol id="icon-arrow3" viewBox="0 0 38 38">
+<path d="M22.1666 26.9166L14.25 19L22.1666 11.0833" stroke="#433D60" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
 </defs>
 </svg>

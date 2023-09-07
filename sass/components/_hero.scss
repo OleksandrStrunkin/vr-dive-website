@@ -1,14 +1,16 @@
-.hero{
+.hero {
     margin-bottom: 60px;
-    @include desktop{
-    margin-bottom: 90px;
+
+    @include desktop {
+        margin-bottom: 90px;
     }
+
     &-content {
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
-    
+
         @include desktop {
             display: flex;
             flex-direction: row;
@@ -71,6 +73,7 @@
 
 .hero-btn {
     width: 292px;
+
     @include desktop {
         width: 214px;
     }
@@ -89,30 +92,40 @@
         margin: 0;
     }
 }
-.img-box1{
+
+.img-box1 {
     position: relative;
 }
-.line1, .line2, .line3 {
+
+.line1,
+.line2,
+.line3 {
     position: absolute;
     width: 100%;
     z-index: -1;
     left: 20%;
-};
+}
 
-.line3{
+;
+
+.line3 {
     top: 36%;
     left: -24%;
 }
-.line1{
+
+.line1 {
     top: -15%;
     left: 35%;
 }
-.line1 img, .line2 img, .line3 img {
+
+.line1 img,
+.line2 img,
+.line3 img {
     display: block;
     max-width: none;
-    width: auto; 
-    max-height: none; 
-    height: auto; 
+    width: auto;
+    max-height: none;
+    height: auto;
 }
 
 .contacts-container {
@@ -122,7 +135,7 @@
     // max-width: 347px;
     margin: 0 auto;
 
-   
+
 }
 
 .arrow {
@@ -133,6 +146,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+
     @include desktop {
         display: none;
     }
@@ -188,6 +202,7 @@
 
     &-title {
         display: none;
+
         @include desktop {
             display: block;
             font-size: 24px;
