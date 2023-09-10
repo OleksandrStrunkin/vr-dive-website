@@ -57,3 +57,33 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactsItems = document.querySelectorAll(".technologies__item");
+    const arrowLeft = document.querySelector(".arrow-left3");
+    const arrowRight = document.querySelector(".arrow-right3");
+
+    let currentItem = 0;
+
+    updateContacts();
+
+    arrowLeft.addEventListener("click", function () {
+        currentItem = (currentItem - 1 + contactsItems.length) % contactsItems.length;
+        updateContacts();
+    });
+
+    arrowRight.addEventListener("click", function () {
+        currentItem = (currentItem + 1) % contactsItems.length;
+        updateContacts();
+    });
+
+    function updateContacts() {
+        for (let i = 0; i < contactsItems.length; i++) {
+            if (i === currentItem) {
+                contactsItems[i].classList.add("active");
+            } else {
+                contactsItems[i].classList.remove("active");
+            }
+        }
+    }
+});

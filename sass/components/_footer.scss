@@ -4,15 +4,24 @@
 
     &__content {
         display: flex;
+        flex-wrap: wrap;
+        @include desktop{
+        display: flex;
         justify-content: space-between;
         margin-bottom: 126px;
+        }
     }
 
     &__list {
         display: flex;
-        flex-direction: column;
-        text-align: left;
-        gap: 15px;
+        flex-wrap: wrap;
+        @include desktop{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            gap: 15px; 
+        }
+        
     }
 
     &__link {
