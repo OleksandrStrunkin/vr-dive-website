@@ -3,20 +3,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px;
+    padding: 45px 22px 65px 22px;
     margin-bottom: 130px;
 
     border-radius: 100px;
     background: radial-gradient(50% 50.00% at 50% 50.00%, #403A5F 0%, #211E2E 100%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    @include desktop {
+        padding: 100px;
+    }
 
     &-boxTitle {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        font-size: 36px;
+        font-size: 24px;
+        @include desktop{
+            font-size: 36px;
         font-weight: 700;
         margin-bottom: 65px;
+        }
     }
     &__subtitle{
         font-weight: 300;
@@ -30,29 +37,43 @@
         margin-top: 20px;
     }
     &__input, &__textarea {
-        width: 48%; /* два елементи в ряду */
+        width: 100%;
+
         margin-bottom: 20px;
-        padding: 28px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        padding-left: 29px;
         border-radius: 40px;
+
         border: 2px solid #FFF;
         box-sizing: border-box;
-
         background-color: transparent;
+
+        @include desktop {
+            padding: 28px;
+            width: 48%;
+        }
     }
 
     &__textarea {
-        width: 100%; /* один елемент на всю ширину */
-        min-height: 210px;
+        width: 100%;
+        min-height: 220px;
         resize: none;
         margin-bottom: 50px;
     }
     
     &__form > &__input:nth-child(odd) {
-        margin-right: 2%; /* вирівнювання другого елемента */
+        margin-right: 0;
+        @include desktop{
+            margin-right: 2%;
+        }
     }
     
     &__form > &__input:nth-child(even) {
-        margin-left: 2%; /* вирівнювання першого елемента */
+        margin-left: 0;
+        @include desktop{
+            margin-left: 2%;
+        }
     }
     &__form > &__input:nth-child(5) {
         width: 100%;
