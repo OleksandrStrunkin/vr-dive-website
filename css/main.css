@@ -1365,6 +1365,7 @@ p {
 .profile__submit {
   width: 214px;
   height: 48px;
+  cursor: pointer;
 }
 @media screen and (min-width: 1000px) {
   .profile__submit {
@@ -1380,14 +1381,23 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 @media screen and (min-width: 1000px) {
   .footer__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1435,11 +1445,36 @@ p {
   width: 155px;
   height: 48px;
 }
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (min-width: 1000px) {
+  .footer__social {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .footer__list-social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
+}
+.footer__title {
+  font-size: 16px;
+  font-weight: 700;
 }
 .footer__copyright {
   font-size: 14px;
@@ -1449,26 +1484,11 @@ p {
 }
 
 .logo-icon_footer {
-  width: 185px;
-  height: 187px;
-  margin-right: 180px;
+  margin-bottom: 58px;
 }
-
-.block {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 100px;
-  position: relative;
-}
-
-.block:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -107px;
-  width: 6px;
-  height: 177px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(129, 118, 175, 0.1)), color-stop(50%, #8176AF), to(rgba(129, 118, 175, 0.1)));
-  background: linear-gradient(to bottom, rgba(129, 118, 175, 0.1) 0%, #8176AF 50%, rgba(129, 118, 175, 0.1) 100%);
+@media screen and (min-width: 1000px) {
+  .logo-icon_footer {
+    width: 185px;
+    height: 187px;
+  }
 }/*# sourceMappingURL=main.css.map */

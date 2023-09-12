@@ -4,9 +4,12 @@
 
     &__content {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        
         @include desktop{
-        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
         justify-content: space-between;
         margin-bottom: 126px;
         }
@@ -44,14 +47,30 @@
     &__cta {
         width: 155px;
         height: 48px;
-    }
+    };
 
-    ;
+    &__social{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 100px;
+        @include desktop{
+            align-items: flex-start;
+            
+        }
+    }
 
     &__list-social {
         display: flex;
+        
         gap: 5px;
+        
 
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: 700;
     }
 
     &__copyright {
@@ -63,24 +82,31 @@
 }
 
 .logo-icon_footer {
+    margin-bottom: 58px;
+    @include desktop{
     width: 185px;
     height: 187px;
-    margin-right: 180px;
+    }
+    // margin-right: 180px;
 }
 
 
 .block {
-    flex: 1;
-    height: 100px;
-    position: relative;
+    // display: none;
+    @include desktop{
+        // display: block;
+        // flex: 1;
+        // height: 100px;
+        // position: relative;
+    }
 }
 
-.block:not(:first-child)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -107px;
-    width: 6px;
-    height: 177px;
-    background: linear-gradient(to bottom, rgba(129, 118, 175, 0.1) 0%, #8176AF 50%, rgba(129, 118, 175, 0.1) 100%);
-}
+// .block:not(:first-child)::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: -107px;
+//     width: 6px;
+//     height: 177px;
+//     background: linear-gradient(to bottom, rgba(129, 118, 175, 0.1) 0%, #8176AF 50%, rgba(129, 118, 175, 0.1) 100%);
+// }

@@ -84,6 +84,7 @@
 .profile__submit {
     width: 214px;
     height: 48px;
+    cursor: pointer;
     @include desktop {
         width: 214px;
     }
